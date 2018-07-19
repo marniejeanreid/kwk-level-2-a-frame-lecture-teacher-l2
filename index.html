@@ -1,12 +1,15 @@
 <html>
   <head>
     <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+  <!-- require the script so that our app has access to the A-Frame library methods and HTML content --> 
   </head>
 
   <body>
-
+    <!-- this is how we define the A-Frame system -->
     <a-scene>
+      <!-- the HTML tags define A-Frame entities to be rendered -->
       <a-box position="-1 1 -3" rotation="45 45 45" color="#4CC3D9"></a-box>
+      <!-- defining A-Frame components (position, geometry, color) via attributes -->
       <a-torus-knot position="0 2.5 -5"radius-inner="1" radius-outer="2" color="yellow"></a-torus-knot>
       <a-plane position="0 0 -3.5" rotation="-90 0 0" width="4" height="2" color="#FFF"></a-plane>
 
